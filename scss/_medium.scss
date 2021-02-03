@@ -1,0 +1,223 @@
+
+ header, nav, main {max-width: 1024px; margin: 0 auto;}
+
+
+
+/* ------------------------HEADER----------------------------- */
+
+
+
+header {
+
+  h1 {
+    
+  
+  }
+
+  h1, h2 {
+    position: absolute;
+    margin-left: 20px; 
+    top: 30px; 
+    line-height: 7; 
+  }
+
+
+  figure.logo {
+    float: left; 
+    padding-top: 10px; 
+  
+  }
+
+.phone {
+ position: absolute; 
+  left: 85%; 
+  top: 240px;  
+  font-size: 16px; 
+}
+  
+  }
+
+
+/* ------------------------NAV----------------------------- */
+
+@media only screen and (min-width: 1200px) {
+
+
+nav button.primaryBtn {display: none;}
+
+nav {
+margin: 0 auto; 
+
+
+ul.hide {display: block;}
+
+ul {
+
+li { 
+  float: left; 
+
+  a {
+    display: block; 
+    border: none; 
+    color: $primaryColor; 
+    border-right: 1px solid $fontColor; 
+    padding: .8rem 1rem; 
+  }
+
+  
+  a:link, a:visited {
+    color: $primaryColor; 
+    text-decoration: none; 
+  }
+
+
+a:hover {
+  background-color: $primaryColor;
+  color: $fontColor;  
+}
+
+.active a {background-color: $secondaryColor; color: $primaryColor; }
+
+  }
+
+
+
+
+
+} 
+
+
+
+
+
+
+ul li ul.parent {display: none;}
+
+ul li ul li {
+   float: none; 
+  display: block; 
+
+
+ a {
+ 
+  display: block; 
+  border: none; 
+  margin: 0;  
+  
+}
+
+}
+
+
+
+div#search {
+ margin-top: 5px; 
+  float: right; 
+  font-size: 1rem; 
+  
+  input {
+    border-radius: 10px 0px 0px 10px; 
+    border: none; 
+    margin-right: 0px; 
+    padding: 3px 2px 3px 2px; 
+  }
+  
+  button {
+    border-radius: 0px 10px 10px 0px;
+    border: none;   
+    margin-left: -10px;
+    font-size: 1rem; 
+    padding: 4.5px;  
+    color: $primaryColor; 
+    border-color: white; 
+    
+  }
+
+}
+
+
+}
+
+}
+
+
+
+/*-------------------- MAIN ------------------------------ */
+
+
+main {
+
+ 
+  .card {
+    flex-basis: 33.33%; 
+  } 
+    
+
+/* ------------------------Column----------------------------- */
+
+.row { 
+    max-width: 1024px; 
+  
+  }
+  
+  .column{
+    -webkit-column-gap: normal; /* Chrome, Safari, Opera */
+    -moz-column-gap: normal; /* Firefox */
+    
+   
+  }
+  
+  @for $i from 1 through 12 {
+      $w: ($i / 12) * 100%;
+      .md-#{$i} {width: $w; float: left;}
+      
+   }  
+    
+    
+  
+    
+  
+    
+}
+
+
+
+
+/*----------------FOOTER--------------------
+
+
+footer {
+    grid-template-columns: 1fr 1fr;
+    
+  
+    
+ p {
+     text-align: center;   
+     grid-column: 1 / span 2;  
+    }
+         
+    
+    
+   
+div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
+div.pear { grid-row: 1; grid-column: 2;}     
+div.banana { grid-row: 2; grid-column: 1; }  
+div.plum { grid-row: 2; grid-column: 2; }        
+    
+ 
+    
+}    
+
+
+
+div#wrapperFooter {
+    clear: both; 
+    background-color: $primaryColor;
+}
+
+
+
+
+
+    
+----------------END FOOTER--------------------*/

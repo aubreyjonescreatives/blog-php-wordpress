@@ -1,0 +1,124 @@
+
+ /* -----------------------BODY ------------------------------- */ 
+
+ header, nav, main, footer { max-width: 1200px; margin: auto;}
+
+
+
+//body{}
+
+
+/*-------------------- HEADER ------------------------------ */
+
+
+header {
+
+h1 {
+
+margin-top: 150px; 
+
+}
+
+.phone {
+  float: right; 
+}
+
+}
+
+/*-------------------- NAV ------------------------------ */
+
+  
+
+
+
+
+/*-------------------- MAIN ------------------------------ */
+
+
+main {
+   
+ 
+ .card {
+   flex-basis: 38.333%
+ }
+
+
+ 
+/* ------------------------Column----------------------------- */
+
+.row { 
+    max-width: 1200px; 
+  
+  }
+  
+  .column{
+    -webkit-column-gap: normal; /* Chrome, Safari, Opera */
+    -moz-column-gap: normal; /* Firefox */
+    
+   
+  }
+  
+  @for $i from 1 through 12 {
+      $w: ($i / 12) * 100%;
+      .lg-#{$i} {width: $w; float: left;}
+      
+   }    
+
+    
+    
+    
+
+    
+    
+
+}
+
+
+
+
+
+/*-------------------- FOOTER ------------------------------ */
+/*
+footer { 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+    p {
+     text-align: center;   
+     grid-column: 2 / span 2;  
+    }
+     
+    
+    
+   
+div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
+div.pear { grid-row: 1; grid-column: 2; }     
+div.banana { grid-row: 1; grid-column: 3; }  
+div.plum { grid-row: 1; grid-column: 4; }        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}*/
+    
+    
+    
+
+
+/*
+
+div#wrapperFooter {
+    clear: both; 
+    background-color: $thirdColor;
+}
+
+
+*/
+

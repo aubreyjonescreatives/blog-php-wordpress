@@ -1,0 +1,459 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+
+
+ /* -----------------------BODY------------------------------- */ 
+
+header, nav, main, footer {font-family: $defaultFont; margin: 0 auto; max-width: 1200px;}
+
+body{
+    font-family: $defaultFont; 
+    font-weight: $normalWeight; 
+    font-size: 16px; 
+    
+
+
+
+
+
+/* ------------------------Header----------------------------- */
+
+
+
+
+div#wrapperHead {
+  background-color: $fontColor;
+  clear: both; 
+}
+
+
+
+
+header {
+clear: both; 
+margin-top: 50px; 
+
+
+h1 {
+color: $primaryColor; 
+font-size: 42px; 
+margin-top: 10px; 
+
+}
+
+h2 {
+color: $primaryColor; 
+font-size: 32px; 
+
+
+}
+
+
+
+@media only screen and (max-width: 560px) {
+
+.phone {
+  display: none; 
+ }
+
+}
+a:link {
+color: $primaryColor; 
+  
+}
+
+
+a:hover {
+  color: $fontColor; 
+  background-color: $primaryColor; 
+  text-decoration: none; 
+  
+    
+  }
+
+
+}
+
+
+
+
+
+
+/* ------------------------NAV----------------------------- */
+
+
+
+div#wrapperNav {
+  background-color: $secondaryColor;
+ 
+ 
+}
+
+
+
+#hamburgerBtn { display: none; } /* hide the navigation button by default */
+#primaryNav li.current-menu-item a{background-color:rgba(0,0,0,0.2);}
+#primaryNav li.current-menu-parent {background-color: rgba(0,0,0,0.20);}
+
+
+@media only screen and (max-width: 1200px) {
+
+/* Navigation Button  -------------------------------------------------------- */
+    body { padding-top: 44px; }
+    
+ 
+nav button.primaryBtn {
+  margin: .2rem 2%; 
+  background-color: transparent; 
+  border: none; 
+  font-size: 1.6rem; 
+  color: $fontColor; 
+} 
+
+nav {
+position: absolute; 
+top: 0; 
+left: 0; 
+background-color: $secondaryColor; 
+overflow: hidden; 
+width: 100%; 
+padding-bottom: 5px; 
+z-index: 999; 
+
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+
+  li {
+
+
+  a {
+    display: block; 
+    padding: .8rem 2%; 
+    text-decoration: none; 
+    color: $primaryColor; 
+    border-top: 1px solid $secondaryColor; 
+  
+  }
+
+  a:link, a:visited {
+    color: $primaryColor; 
+    text-decoration: none; 
+  }
+
+
+a:hover {
+  background-color: $primaryColor;
+  color: $fontColor;  
+}
+
+.active a {background-color: $primaryColor; color: $fontColor; }
+
+  }
+
+
+}
+
+ul.hide {display: none;}
+
+ul li ul.parent {display: none;}
+
+
+
+
+
+
+}
+
+
+div#search {
+  position: absolute; 
+  top: 8px; 
+  right: 2%;  
+  font-size: 1rem; 
+  
+  input {
+    border-radius: 10px 0px 0px 10px; 
+    border: none; 
+    margin-right: 0px; 
+    padding: 3px 2px 2.5px 2px; 
+  }
+  
+  button {
+    border-radius: 0px 10px 10px 0px;
+    border: none;   
+    margin-left: -10px;
+    font-size: 1rem; 
+    padding: 4.5px;  
+    color: $primaryColor; 
+    border-color: white; 
+    
+  }
+}
+
+
+
+
+/* Navigation Bar -------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+} /* End Mobile Styles */
+
+
+
+
+
+
+
+
+/* ------------------------MAIN----------------------------- */
+
+main {
+ 
+
+picture {
+  position: relative; 
+
+  img {
+    margin: 0 auto; 
+    width: 100%; 
+  }
+}
+
+
+
+
+.slick-dots {
+display: flex; 
+justify-content: center; 
+
+
+li {
+  list-style-type: none;
+  padding: 10px;   
+  font-size: 10px; 
+  
+
+  
+  button {
+    display: block; 
+    color: $fontColor; 
+    background-color: $fontColor;
+    border-radius: 100%; 
+    border: 1px solid #c8c8c8; 
+  }
+}
+
+li.slick-active button {
+  background-color: #c8c8c8;
+  color: #c8c8c8; 
+
+}
+
+
+}
+
+$cbr: 10px; 
+.card-deck {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+ 
+
+  .card {
+    flex-basis: 50%; 
+    border: 1px solid $primaryColor; 
+    border-radius: $cbr; 
+    margin: 1rem 0; 
+    text-align: center; 
+    section {
+      background-color: $primaryColor; 
+      color: $fontColor; 
+      padding: 1rem 0px; 
+      border-top-left-radius: $cbr - 1; 
+      border-top-right-radius: $cbr - 1;
+    }
+    img {
+      padding: 1rem; 
+    }
+    p { 
+      padding: 1rem 2vw; 
+    }
+    a {
+      display: block; 
+      background-color: $primaryColor; 
+      color: $fontColor;
+      padding: 1rem 0; 
+      margin: 1rem;  
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+figure.heroimage {width: 100%;  }
+figure.heroimage img {width: 100%; padding: 10px;}
+
+
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+  
+/* ------------------------Column----------------------------- */
+
+.row { 
+  max-width: 650px; 
+
+}
+
+.column{
+  -webkit-column-gap: normal; /* Chrome, Safari, Opera */
+  -moz-column-gap: normal; /* Firefox */
+  
+ 
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .sm-#{$i} {width: $w; float: left;}
+    
+ }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* ------------------------FOOTER----------------------------- */
+
+div#wrapperFooter {
+   margin-top: 300px; 
+    background-color: $primaryColor;
+   
+    height: 125px; 
+   
+}
+
+
+
+
+footer {
+  margin-top: 300px; 
+
+    background-color: $primaryColor; 
+    height: 125px;   
+ 
+   
+    
+    p {  
+      color: $fontColor; 
+      padding: 2rem 0;     
+      font-size: 18px;
+      text-align: center; 
+     
+      p a {
+        color: $fontColor;  
+        
+     } 
+
+     
+        
+    }  // end p 
+    
+   .footerSocialIcons {
+     text-align: center; 
+    color: $fontColor;
+    font-size: 28px;  
+
+    a:link, a:visited {
+      color: $fontColor; 
+
+    }
+
+    a:hover {
+      color: $primaryColor; 
+      background-color: $fourthColor; 
+      text-decoration: none; 
+    }
+
+   }
+    
+/*    
+   
+div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
+div.pear { grid-row: 2; grid-column: 1; }     
+div.banana { grid-row: 3; grid-column: 1; }  
+div.plum { grid-row: 4; grid-column: 1; }        
+    
+ */   
+    
+   
+
+
+
+
+}
+
+
+}
+
+
+
+
+/* ------------------------Clearfix: Force an Element not to collapse----------------------------- */
+ 
+    .clearfix:after {
+        content: ""; 
+        display: table; 
+        clear: both; 
+        
+    }    
+    
+
+
+
+
+
