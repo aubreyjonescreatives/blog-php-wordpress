@@ -59,14 +59,14 @@ li {
   a {
     display: block; 
     border: none; 
-    color: $primaryColor; 
+    color: $fontColor; 
     border-right: 1px solid $fontColor; 
     padding: .8rem 1rem; 
   }
 
   
   a:link, a:visited {
-    color: $primaryColor; 
+    color: $fontColor; 
     text-decoration: none; 
   }
 
@@ -147,16 +147,20 @@ div#search {
 
 main {
 
- 
+ .card-deck { 
+  flex: 33%; 
   .card {
-    flex-basis: 33.33%; 
-  } 
-    
+  
+   
+  }
+  
 
+ }
 /* ------------------------Column----------------------------- */
 
 .row { 
-    max-width: 1024px; 
+    max-width: 1024px;
+    min-width: 650px;  
   
   }
   

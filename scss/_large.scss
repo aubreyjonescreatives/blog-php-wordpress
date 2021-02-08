@@ -37,13 +37,14 @@ margin-top: 150px;
 
 main {
    
- 
- .card {
-   flex-basis: 38.333%
- }
+ .card-deck { 
+  
+  .card {
+    flex: 25%; 
+    max-width: 25%; 
+  }
 
-
- 
+}
 /* ------------------------Column----------------------------- */
 
 .row { 

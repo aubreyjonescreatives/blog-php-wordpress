@@ -138,13 +138,13 @@ ul {
     display: block; 
     padding: .8rem 2%; 
     text-decoration: none; 
-    color: $primaryColor; 
+    color: $fontColor; 
     border-top: 1px solid $secondaryColor; 
   
   }
 
   a:link, a:visited {
-    color: $primaryColor; 
+    color: $fontColor; 
     text-decoration: none; 
   }
 
@@ -267,42 +267,50 @@ li.slick-active button {
 
 }
 
-$cbr: 10px; 
-.card-deck {
-  display: flex; 
-  flex-wrap: wrap; 
-}
+
  
-
-  .card {
-    flex-basis: 50%; 
-    border: 1px solid $primaryColor; 
-    border-radius: $cbr; 
-    margin: 1rem 0; 
-    text-align: center; 
-    section {
-      background-color: $primaryColor; 
-      color: $fontColor; 
-      padding: 1rem 0px; 
-      border-top-left-radius: $cbr - 1; 
-      border-top-right-radius: $cbr - 1;
-    }
-    img {
-      padding: 1rem; 
-    }
-    p { 
-      padding: 1rem 2vw; 
-    }
-    a {
-      display: block; 
-      background-color: $primaryColor; 
-      color: $fontColor;
-      padding: 1rem 0; 
-      margin: 1rem;  
-    }
-  }
+.card-deck {
+display: flex; 
+flex-wrap: wrap; 
+text-align: center;
 
 
+.card {
+  opacity: 0.75; 
+  max-width: 47%;  
+  margin: 5px; 
+}
+
+.title {
+  position: absolute;
+  top: 0px;  
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor;  
+  
+}
+
+.date {
+  position: absolute; 
+  bottom: 0px; 
+  text-align: center; 
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor; 
+}
+
+
+}
+
+
+.card:hover {
+  opacity: 1;
+  
+}
 
 
 
@@ -371,7 +379,7 @@ figure.heroimage img {width: 100%; padding: 10px;}
 
 div#wrapperFooter {
    margin-top: 300px; 
-    background-color: $primaryColor;
+    background-color: $secondaryColor;
    
     height: 125px; 
    
@@ -383,7 +391,7 @@ div#wrapperFooter {
 footer {
   margin-top: 300px; 
 
-    background-color: $primaryColor; 
+    background-color: $secondaryColor; 
     height: 125px;   
  
    
