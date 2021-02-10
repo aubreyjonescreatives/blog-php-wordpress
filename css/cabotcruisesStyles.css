@@ -342,6 +342,8 @@ body {
       padding: 10px;
       text-align: center;
       color: #ffffff; }
+      body .copyright p a:link, body .copyright p a:visited {
+        color: #ffffff; }
   body .footerSocialIcons {
     text-align: center;
     color: #ffffff;

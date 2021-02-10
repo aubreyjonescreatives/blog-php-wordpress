@@ -459,7 +459,13 @@ div.plum { grid-row: 4; grid-column: 1; }
   padding: 10px; 
   text-align: center;
   color: $fontColor; 
+
+  
+  a:link, a:visited {
+    color: $fontColor; 
+  }
   } 
+
 }
 
 
