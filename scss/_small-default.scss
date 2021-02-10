@@ -41,14 +41,16 @@ margin-top: 50px;
 
 
 h1 {
-color: $primaryColor; 
+clear: both; 
+color: $thirdColor; 
 font-size: 42px; 
 margin-top: 10px; 
 
 }
 
 h2 {
-color: $primaryColor; 
+clear: both; 
+color: $thirdColor; 
 font-size: 32px; 
 
 
@@ -71,7 +73,7 @@ color: $primaryColor;
 
 a:hover {
   color: $fontColor; 
-  background-color: $primaryColor; 
+  background-color: $secondaryColor; 
   text-decoration: none; 
   
     
@@ -378,56 +380,61 @@ figure.heroimage img {width: 100%; padding: 10px;}
 /* ------------------------FOOTER----------------------------- */
 
 div#wrapperFooter {
-   margin-top: 300px; 
-    background-color: $secondaryColor;
-   
-    height: 125px; 
+   margin-top: 100px; 
+    background-color: $primaryColor;
+    
+    height: 500px; 
    
 }
 
 
-
-
 footer {
-  margin-top: 300px; 
+    margin-top: 100px; 
+    background-color: $primaryColor; 
+    height: 500px;   
+    color: $fontColor; 
 
-    background-color: $secondaryColor; 
-    height: 125px;   
- 
-   
-    
-    p {  
-      color: $fontColor; 
-      padding: 2rem 0;     
-      font-size: 18px;
-      text-align: center; 
-     
-      p a {
-        color: $fontColor;  
-        
-     } 
+    h1 {
+      font-size: 24px; 
+      padding-bottom: 20px; 
+    }
 
-     
-        
-    }  // end p 
-    
-   .footerSocialIcons {
-     text-align: center; 
-    color: $fontColor;
-    font-size: 28px;  
+    h2 {
+      font-size: 20px; 
+      padding: 10px 0px; 
+    }
 
     a:link, a:visited {
       color: $fontColor; 
-
     }
 
-    a:hover {
-      color: $primaryColor; 
-      background-color: $fourthColor; 
-      text-decoration: none; 
-    }
 
-   }
+    .formInfo {
+      padding-top: 20px; 
+      text-align: center; 
+
+      p {  
+        color: $fontColor; 
+        padding: 2rem 0;     
+        font-size: 20px;
+        text-align: center; 
+        line-height: 25px; 
+       
+        p a {
+          color: $fontColor;  
+          
+       } 
+  
+
+
+    }
+  
+     
+        
+    }  // end p 
+
+
+    
     
 /*    
    
@@ -444,6 +451,40 @@ div.plum { grid-row: 4; grid-column: 1; }
 
 
 }
+
+
+.copyright {
+  width: 100%; 
+  background-color: $secondaryColor; 
+  padding: 10px; 
+  p {
+  padding: 10px; 
+  text-align: center;
+  color: $fontColor; 
+  } 
+}
+
+
+.footerSocialIcons {
+  text-align: center; 
+  color: $fontColor;
+  font-size: 28px; 
+  background-color: $secondaryColor;  
+  width: 100%; 
+  padding: 10px 0px; 
+
+  a:link, a:visited {
+    color: $fontColor; 
+
+  }
+
+  a:hover {
+    color: $primaryColor; 
+    background-color: $fontColor; 
+    text-decoration: none; 
+  }
+
+ }
 
 
 }

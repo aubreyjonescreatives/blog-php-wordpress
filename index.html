@@ -31,8 +31,10 @@
 <figure class="logo"><img src="images/logo0.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x"></figure>
 
 <div class="col-sm-6 col-md-8 col-lg-8">
+<div class="theTitles">
 <h1>Cabot Cruises</h1>
 <h2>Holiday in the Sun</h2>
+</div>
 </div>
 
 <p class="phone"><a href="tel:+8015555555">801-555-5555</a></p>
@@ -142,25 +144,82 @@
 
 
 <footer>
- 
- <div class="copyright">      
-        
-    <p>Aubrey Jones Copyright &copy; 2021 Aubrey Jones</p>
-    
- </div>        
- 
- <div class="footerSocialIcons">
- <a href="http://linkedin.com/in/aubrey-jones" class="fa fa-linkedin-square" aria-hidden="true"></a>
- <a href="https://medium.com/@aubreyjonescreatives" class="fa fa-medium" aria-hidden="true"></a> 
- <a href="https://github.com/aubreyjonescreatives" class="fa fa-github-square" aria-hidden="true"></a> 
-</div>   
-    
+  <div class="formInfo">
+<div class="row">
+<div class="col">
+<h1>Contact Us</h1>
+<h2 id="companyName">Cabot Cruises</h2>
+<h2 id="companyAddress"><a href="https://www.google.com/maps/place/800+W+University+Pkwy,+Orem,+UT+84058/@40.2833967,-111.7197776,17z/data=!3m1!4b1!4m5!3m4!1s0x874d9b21da908f95:0xcfada59a4aa40730!8m2!3d40.2833967!4d-111.7175889" target="_blank">
+Cabot Cruises<br>
+800 W University Parkway <br> 
+Orem, UT, 84058
+</a></h2>
+<h2 class="phoneFooter"><a href="tel:+8015555555" id="companyPhone">801-555-5555</a></h2>
+<h2>Hours of Operation:</h2>
+<h2>Monday - Friday 9am - 4pm</h2>
+</div>
+<div class="col">
+  <h1>newsLetter</h1>
+  <p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials</p>
+<form method="post" action="/FormToEmail.pho">
+<input type="email" placeholder="Email...">
+<button>Subscribe</button>
+</form>
+</div>
+<div class="col">
+<h1>Why Cabot Cruises</h1>
+<p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive 
+  vacations including discounted cruises. 
+</p>
+<p>
+  We do not sell travel to residents of Delaware, Iowa, Florida, Hawaii, and Washington state because those states are just weird. 
+  If you are a resident of one of these states, call your congressman and tell them to change the regulaMons. 
+</p>
+</div>
+</div>
+</div>
+</div>
+
 </footer> 
 
+
 </div>
-    
+
+<div id="socialWrapper">
+  
+ <div class="copyright">      
+        
+  <p>Aubrey Jones Copyright &copy; 2021 Aubrey Jones</p>
+  
+</div>
+
+  <div class="footerSocialIcons">
+  <a href="http://linkedin.com/in/aubrey-jones" class="fa fa-linkedin-square" aria-hidden="true"></a>
+  <a href="https://medium.com/@aubreyjonescreatives" class="fa fa-medium" aria-hidden="true"></a> 
+  <a href="https://github.com/aubreyjonescreatives" class="fa fa-github-square" aria-hidden="true"></a> 
+ </div>   
+ </div>
+</div> 
     
 </body> 
+<script type="application/ld+json">
+  {
+    "name": "Cabot Cruises", 
+    "Phone": "801-555-5555", 
+    "@context": "https://www.aubreyjonescreatives.com", 
+    "Address":{
+    "@type":"PostalAddress",
+    "streetAddress":"800 W University Pkwy", 
+    "addressLocality":"Orem", 
+    "addressRegion":"UT"
+    
+    }
+
+
+</script>
+
+
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
