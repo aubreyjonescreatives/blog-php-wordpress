@@ -226,8 +226,6 @@ body {
         max-width: 47%;
         margin: 5px; }
       body main .card-deck .title {
-        position: absolute;
-        top: 500px;
         width: 100%;
         padding: 15px;
         background-color: #d4af37;
