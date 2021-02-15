@@ -90,8 +90,7 @@ html {
 /* -----------------------BODY------------------------------- */
 header, nav, main, footer {
   font-family: "roboto";
-  margin: 0 auto;
-  max-width: 1200px; }
+  margin: 0 auto; }
 
 body {
   font-family: "roboto";
@@ -102,31 +101,26 @@ body {
   /* hide the navigation button by default */
   /* End Mobile Styles */
   /* ------------------------MAIN----------------------------- */
-  /* ------------------------FOOTER----------------------------- */ }
+  /* ------------------------FOOTER----------------------------- */
+  /* ------------------------Clearfix: Force an Element not to collapse----------------------------- */ }
   body div#wrapperHead {
-    background-color: #ffffff;
-    clear: both; }
+    background-color: #ffffff; }
   body header {
-    clear: both;
-    margin-top: 50px; }
-    body header h1 {
+    margin: 0 auto;
+    margin-left: 10px;
+    display: grid; }
+    body header div:nth-child(1) {
+      grid-template-columns: 1fr;
       clear: both;
-      color: #d4af37;
-      font-size: 42px;
-      margin-top: 10px; }
-    body header h2 {
+      float: left;
+      margin-top: 50px; }
+    body header div:nth-child(2) {
       clear: both;
-      color: #d4af37;
-      font-size: 32px; }
-    @media only screen and (max-width: 560px) {
-      body header .phone {
-        display: none; } }
-    body header a:link {
-      color: #d4af37; }
-    body header a:hover {
-      color: #ffffff;
-      background-color: #48d1cc;
-      text-decoration: none; }
+      font-size: 30px;
+      color: #48d1cc;
+      grid-template-columns: 1fr; }
+    body header div:nth-child(3) {
+      display: none; }
   body div#wrapperNav {
     background-color: #48d1cc; }
   body #hamburgerBtn {
@@ -200,6 +194,8 @@ body {
   body main {
     /* Clear floats after the columns */
     /* ------------------------Column----------------------------- */ }
+    body main .my-class {
+      clear: both; }
     body main picture {
       position: relative; }
       body main picture img {
@@ -225,21 +221,19 @@ body {
       display: flex;
       flex-wrap: wrap;
       text-align: center; }
-      body main .card-deck .card {
+      body main .card-deck .container {
         opacity: 0.75;
         max-width: 47%;
         margin: 5px; }
       body main .card-deck .title {
         position: absolute;
-        top: 0px;
+        top: 500px;
         width: 100%;
         padding: 15px;
         background-color: #d4af37;
         background: rgba(212, 175, 55, 0.2);
         color: #ffffff; }
       body main .card-deck .date {
-        position: absolute;
-        bottom: 0px;
         text-align: center;
         width: 100%;
         padding: 15px;
@@ -305,9 +299,10 @@ body {
     background-color: #d4af37;
     padding-bottom: 20px; }
   body footer {
-    margin-top: 100px;
-    background-color: #d4af37;
+    display: grid;
     color: #ffffff;
+    padding: 10px;
+    grid-template-columns: 1fr;
     /*    
        
     div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
@@ -316,25 +311,37 @@ body {
     div.plum { grid-row: 4; grid-column: 1; }        
         
      */ }
-    body footer h1 {
-      font-size: 24px;
-      padding-bottom: 20px; }
-    body footer h2 {
-      font-size: 20px;
-      padding: 10px 0px; }
-    body footer a:link, body footer a:visited {
-      color: #ffffff; }
-    body footer .formInfo {
-      padding-top: 20px;
-      text-align: center; }
-      body footer .formInfo p {
+    body footer div:nth-child(1) {
+      grid-template-columns: 1fr;
+      padding: 15px; }
+      body footer div:nth-child(1) h1 {
+        font-size: 24px;
+        margin-bottom: 10px; }
+      body footer div:nth-child(1) h2 {
         color: #ffffff;
+        padding: 5px; }
+      body footer div:nth-child(1) h2 a:link, body footer div:nth-child(1) a:visited {
+        color: #ffffff; }
+    body footer div:nth-child(2) {
+      grid-template-columns: 1fr;
+      padding: 15px; }
+      body footer div:nth-child(2) h1 {
+        margin-bottom: 5px;
+        font-size: 24px; }
+      body footer div:nth-child(2) p {
+        margin-top: 5px;
         padding: 10px;
-        font-size: 16px;
-        text-align: center; }
-        body footer .formInfo p p a {
-          color: #ffffff; }
+        line-height: 15px; }
+    body footer div:nth-child(3) {
+      grid-template-columns: 1fr; }
+      body footer div:nth-child(3) h1 {
+        margin-top: 10px;
+        font-size: 24px; }
+      body footer div:nth-child(3) p {
+        padding: 10px;
+        line-height: 15px; }
   body .copyright {
+    clear: both;
     width: 100%;
     background-color: #48d1cc;
     padding: 10px; }
@@ -357,29 +364,28 @@ body {
       color: #d4af37;
       background-color: #ffffff;
       text-decoration: none; }
-
-/* ------------------------Clearfix: Force an Element not to collapse----------------------------- */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
+  body .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 @media only screen and (min-width: 560px) {
   header, nav, main {
-    max-width: 1024px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 1024px; }
 
   /* ------------------------HEADER----------------------------- */
-  header .theTitles {
-    margin-top: 120px; }
-  header figure.logo {
-    float: left;
-    padding-top: 10px; }
-  header .phone {
-    position: absolute;
-    left: 85%;
-    top: 240px;
-    font-size: 16px; }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+    header div:nth-child(1) {
+      grid-template-columns: 1fr 2fr; }
+    header div:nth-child(2) {
+      grid-template-columns: 1fr 2fr;
+      font-size: 30px;
+      color: #48d1cc; }
+    header div:nth-child(1) {
+      display: grid; }
 
   /* ------------------------NAV----------------------------- */ }
 @media only screen and (min-width: 560px) and (min-width: 1200px) {
@@ -485,29 +491,34 @@ body {
       float: left; }
 
   /*----------------FOOTER--------------------*/
+  footer {
+    display: grid; }
+    footer .div:nth-child(1) {
+      grid-template-columns: 1fr 2fr; }
+    footer .div:nth-child(2) {
+      grid-template-columns: 1fr 2fr; }
+    footer .div:nth-child(3) {
+      grid-template-columns: 1fr 2fr; }
+
   /*----------------END FOOTER--------------------*/ }
 /* end media query */
 @media only screen and (min-width: 1024px) and (max-width: 1024px) {
   /* -----------------------BODY ------------------------------- */
   header, nav, main, footer {
-    max-width: 1200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 1200px; }
 
   /*-------------------- HEADER ------------------------------ */
-  header h1 {
-    margin-top: 150px; }
-  header .phone {
-    float: right; }
-
   /*-------------------- NAV ------------------------------ */
   /*-------------------- MAIN ------------------------------ */
   main {
-    /* ------------------------Column----------------------------- */ }
+    /* ------------------------Column-----------------------------*/ }
     main .card-deck .card {
       flex: 25%;
       max-width: 25%; }
     main .row {
-      max-width: 1200px; }
+      max-width: 1200px;
+      min-width: 1024px; }
     main .column {
       -webkit-column-gap: normal;
       /* Chrome, Safari, Opera */
@@ -550,5 +561,14 @@ body {
       width: 100%;
       float: left; }
 
-  /*-------------------- FOOTER ------------------------------ */ }
+  /*-------------------- FOOTER ------------------------------ */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    footer div:nth-child(1) {
+      grid-template-columns: 1fr 1fr 1fr; }
+    footer div:nth-child(2) {
+      grid-template-columns: 1fr 1fr 1fr; }
+    footer div:nth-child(3) {
+      grid-template-columns: 1fr 1fr 1fr; } }
 /* end media query */
