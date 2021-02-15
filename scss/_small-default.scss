@@ -10,7 +10,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
 
  /* -----------------------BODY------------------------------- */ 
 
-header, nav, main, footer {font-family: $defaultFont; margin: 0 auto;}
+header, nav, main, footer, .copyright, .footerSocialIcons {font-family: $defaultFont; margin: 0 auto;}
 
 body{
     font-family: $defaultFont; 
@@ -450,6 +450,13 @@ div.plum { grid-row: 4; grid-column: 1; }
 }
 
 
+
+div#copyrightWrapper {
+   background-color: $secondaryColor;
+  
+}
+
+
 .copyright {
   clear: both; 
   width: 100%; 
@@ -467,6 +474,14 @@ div.plum { grid-row: 4; grid-column: 1; }
   } 
 
 }
+
+
+div#socialWrapper {
+  background-color: $secondaryColor;
+  padding-bottom: 20px; 
+}
+
+
 
 
 .footerSocialIcons {

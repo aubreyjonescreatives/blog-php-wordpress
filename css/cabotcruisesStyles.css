@@ -88,7 +88,7 @@ html {
   box-sizing: border-box; }
 
 /* -----------------------BODY------------------------------- */
-header, nav, main, footer {
+header, nav, main, footer, .copyright, .footerSocialIcons {
   font-family: "roboto";
   margin: 0 auto; }
 
@@ -334,6 +334,8 @@ body {
     body footer div:nth-child(3) p {
       padding: 10px;
       line-height: 15px; }
+  body div#copyrightWrapper {
+    background-color: #48d1cc; }
   body .copyright {
     clear: both;
     width: 100%;
@@ -345,6 +347,9 @@ body {
       color: #ffffff; }
       body .copyright p a:link, body .copyright p a:visited {
         color: #ffffff; }
+  body div#socialWrapper {
+    background-color: #48d1cc;
+    padding-bottom: 20px; }
   body .footerSocialIcons {
     text-align: center;
     color: #ffffff;
@@ -364,7 +369,7 @@ body {
     clear: both; }
 
 @media only screen and (min-width: 560px) {
-  header, nav, main {
+  header, nav, main, footer, .copyright, .footerSocialIcons {
     margin: 0 auto;
     max-width: 1024px; }
 
@@ -493,7 +498,7 @@ body {
 /* end media query */
 @media only screen and (min-width: 1024px) and (max-width: 1024px) {
   /* -----------------------BODY ------------------------------- */
-  header, nav, main, footer {
+  header, nav, main, footer, .copyright, .footerSocialIcons {
     margin: 0 auto;
     max-width: 1200px; }
 
