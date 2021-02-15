@@ -13,16 +13,11 @@ grid-template-columns: 1fr 2fr;
 
 
 div:nth-child(1) {
-  grid-template-columns: 1fr 2fr;
- 
-
+  margin-top: 0px; 
 }
 
 
-
-
 div:nth-child(2) { 
-    grid-template-columns: 1fr 2fr;
     font-size: 30px; 
     color: $secondaryColor; 
    
@@ -127,7 +122,7 @@ div#search {
     border-radius: 10px 0px 0px 10px; 
     border: none; 
     margin-right: 0px; 
-    padding: 3px 2px 3px 2px; 
+    padding: 7px 6px 5px 6px; 
   }
   
   button {
@@ -197,7 +192,7 @@ footer {
   
   display: grid; 
   grid-template-columns: 1fr 2fr;
-
+  grid-template-rows: auto;
 
 
 }
