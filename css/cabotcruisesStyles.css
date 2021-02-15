@@ -310,7 +310,6 @@ body {
         
      */ }
     body footer div:nth-child(1) {
-      grid-template-columns: 1fr;
       padding: 15px; }
       body footer div:nth-child(1) h1 {
         font-size: 24px;
@@ -321,7 +320,6 @@ body {
       body footer div:nth-child(1) h2 a:link, body footer div:nth-child(1) a:visited {
         color: #ffffff; }
     body footer div:nth-child(2) {
-      grid-template-columns: 1fr;
       padding: 15px; }
       body footer div:nth-child(2) h1 {
         margin-bottom: 5px;
@@ -330,14 +328,12 @@ body {
         margin-top: 5px;
         padding: 10px;
         line-height: 15px; }
-    body footer div:nth-child(3) {
-      grid-template-columns: 1fr; }
-      body footer div:nth-child(3) h1 {
-        margin-top: 10px;
-        font-size: 24px; }
-      body footer div:nth-child(3) p {
-        padding: 10px;
-        line-height: 15px; }
+    body footer div:nth-child(3) h1 {
+      margin-top: 10px;
+      font-size: 24px; }
+    body footer div:nth-child(3) p {
+      padding: 10px;
+      line-height: 15px; }
   body .copyright {
     clear: both;
     width: 100%;
@@ -490,13 +486,8 @@ body {
 
   /*----------------FOOTER--------------------*/
   footer {
-    display: grid; }
-    footer .div:nth-child(1) {
-      grid-template-columns: 1fr 2fr; }
-    footer .div:nth-child(2) {
-      grid-template-columns: 1fr 2fr; }
-    footer .div:nth-child(3) {
-      grid-template-columns: 1fr 2fr; }
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
 
   /*----------------END FOOTER--------------------*/ }
 /* end media query */
@@ -562,11 +553,5 @@ body {
   /*-------------------- FOOTER ------------------------------ */
   footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
-    footer div:nth-child(1) {
-      grid-template-columns: 1fr 1fr 1fr; }
-    footer div:nth-child(2) {
-      grid-template-columns: 1fr 1fr 1fr; }
-    footer div:nth-child(3) {
-      grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr; } }
 /* end media query */

@@ -196,23 +196,8 @@ main {
 footer {
   
   display: grid; 
+  grid-template-columns: 1fr 2fr;
 
-  .div:nth-child(1) {
-    grid-template-columns: 1fr 2fr;
-  
-  }
-  
-  .div:nth-child(2) {
-    grid-template-columns: 1fr 2fr;
-  
-  
-  }
-  
-  .div:nth-child(3) { 
-    grid-template-columns: 1fr 2fr;
-    
-  }
-    
 
 
 }
