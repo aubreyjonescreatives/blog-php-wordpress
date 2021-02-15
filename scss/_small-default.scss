@@ -435,6 +435,10 @@ div:nth-child(2) {
     
   }
 
+  button a:link, a:visited {
+    color: $primaryColor; 
+  }
+
 
 }
 

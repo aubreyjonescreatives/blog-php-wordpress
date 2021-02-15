@@ -334,6 +334,8 @@ body {
         padding: 10px;
         color: #d4af37;
         border-color: white; }
+      body footer div:nth-child(2) button a:link, body footer div:nth-child(2) a:visited {
+        color: #d4af37; }
     body footer div:nth-child(3) {
       padding: 15px; }
       body footer div:nth-child(3) h1 {
