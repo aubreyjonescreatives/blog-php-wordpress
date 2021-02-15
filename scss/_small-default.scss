@@ -404,6 +404,7 @@ div:nth-child(1) {
 
 div:nth-child(2) { 
   padding: 15px; 
+  width: 100%; 
 
   h1 {
     margin-bottom: 5px;
@@ -413,6 +414,25 @@ div:nth-child(2) {
     margin-top: 5px; 
     padding: 10px; 
     line-height: 15px; 
+  }
+
+
+  input {
+    border-radius: 10px 0px 0px 10px; 
+    border: none; 
+    margin-right: 0px; 
+    padding: 12px 9px 10px 10px; 
+  }
+  
+  button {
+    border-radius: 0px 10px 10px 0px;
+    border: none;   
+    margin-left: -10px;
+    font-size: 1rem; 
+    padding: 10px;  
+    color: $secondaryColor; 
+    border-color: white; 
+    
   }
 
 
