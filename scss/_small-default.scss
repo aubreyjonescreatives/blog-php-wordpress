@@ -263,19 +263,23 @@ li.slick-active button {
 
 
  
-.container {
+.container-cards {
 display: flex; 
 flex-wrap: wrap; 
+margin: 5px; 
 
 
 
 
-  div:nth-child(1) {
+
+
+  .card-1 {
     position: relative; 
     text-align: center; 
     opacity: 0.75; 
-
-
+    margin: 5px; 
+    
+   
 
 
 .title { 
@@ -304,12 +308,12 @@ flex-wrap: wrap;
 
 
 
-  div:nth-child(2) {
+  .card-2 {
     position: relative; 
     text-align: center; 
     opacity: 0.75; 
-
-
+    margin: 5px; 
+  
 
 
 .title { 
@@ -338,12 +342,12 @@ flex-wrap: wrap;
 
 
   
-  div:nth-child(3) {
+  .card-3 {
     position: relative; 
     text-align: center; 
     opacity: 0.75; 
- 
-
+    margin: 5px; 
+  
 
 
 .title { 
@@ -372,12 +376,12 @@ flex-wrap: wrap;
 
 
 
-  div:nth-child(4) {
+  .card-4 {
     position: relative; 
     text-align: center; 
     opacity: 0.75; 
-
-
+    margin: 5px; 
+   
 
 
 .title { 
