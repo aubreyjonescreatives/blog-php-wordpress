@@ -150,7 +150,23 @@ div#search {
 
 main {
  
+
+
+  .container-cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 5px; 
+    
+    
+
+
+ .card-1 {
+  flex-basis: 31%; 
+ }
+
  
+
+}
 
 /* ------------------------Column----------------------------- */
 

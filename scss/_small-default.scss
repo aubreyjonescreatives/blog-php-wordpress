@@ -271,7 +271,8 @@ margin: 5px;
 
 
 
-  .card-1 {
+  .card {
+    flex-basis: 45%; 
     position: relative; 
     text-align: center; 
     opacity: 0.75; 
@@ -306,105 +307,8 @@ margin: 5px;
 
 
 
-  .card-2 {
-    position: relative; 
-    text-align: center; 
-    opacity: 0.75; 
-    margin: 5px; 
-  
 
 
-.title { 
-  position: absolute; 
-  top: 8px; 
-  width: 100%; 
-  padding: 15px;
-  background-color: $primaryColor; 
-  background: rgba($primaryColor, 0.2); 
-  color: $fontColor;  
-  
-}
-
-.date {
-  position: absolute; 
-  bottom: 8px; 
-  text-align: center; 
-  width: 100%; 
-  padding: 15px;
-  background-color: $primaryColor; 
-  background: rgba($primaryColor, 0.2); 
-  color: $fontColor; 
-}
-
-  }
-
-
-  
-  .card-3 {
-    position: relative; 
-    text-align: center; 
-    opacity: 0.75; 
-    margin: 5px; 
-  
-
-
-.title { 
-  position: absolute; 
-  top: 8px; 
-  width: 100%; 
-  padding: 15px;
-  background-color: $primaryColor; 
-  background: rgba($primaryColor, 0.2); 
-  color: $fontColor;  
-  
-}
-
-.date {
-  position: absolute; 
-  bottom: 8px; 
-  text-align: center; 
-  width: 100%; 
-  padding: 15px;
-  background-color: $primaryColor; 
-  background: rgba($primaryColor, 0.2); 
-  color: $fontColor; 
-}
-
-  }
-
-
-
-  .card-4 {
-    position: relative; 
-    text-align: center; 
-    opacity: 0.75; 
-    margin: 5px; 
-   
-
-
-.title { 
-  position: absolute; 
-  top: 8px; 
-  width: 100%; 
-  padding: 15px;
-  background-color: $primaryColor; 
-  background: rgba($primaryColor, 0.2); 
-  color: $fontColor;  
-  
-}
-
-.date {
-  position: absolute; 
-  bottom: 8px; 
-  text-align: center; 
-  width: 100%; 
-  padding: 15px;
-  background-color: $primaryColor; 
-  background: rgba($primaryColor, 0.2); 
-  color: $fontColor; 
-}
-
-  }
 
 
 
@@ -415,28 +319,11 @@ margin: 5px;
 }
 
 
-.card-1:hover {
+.card:hover {
   opacity: 1;
   
 }
 
-
-.card-2:hover {
-  opacity: 1;
-  
-}
-
-
-.card-3:hover {
-  opacity: 1;
-  
-}
-
-
-.card-4:hover {
-  opacity: 1;
-  
-}
 
 
 
