@@ -263,19 +263,24 @@ li.slick-active button {
 
 
  
-.card-deck {
+.container {
 display: flex; 
 flex-wrap: wrap; 
-text-align: center;
 
 
-.container {
-  opacity: 0.75; 
-  max-width: 47%;  
-  margin: 5px; 
-}
+
+
+  div:nth-child(1) {
+    position: relative; 
+    text-align: center; 
+    opacity: 0.75; 
+
+
+
 
 .title { 
+  position: absolute; 
+  top: 8px; 
   width: 100%; 
   padding: 15px;
   background-color: $primaryColor; 
@@ -285,6 +290,8 @@ text-align: center;
 }
 
 .date {
+  position: absolute; 
+  bottom: 8px; 
   text-align: center; 
   width: 100%; 
   padding: 15px;
@@ -292,6 +299,115 @@ text-align: center;
   background: rgba($primaryColor, 0.2); 
   color: $fontColor; 
 }
+
+  }
+
+
+
+  div:nth-child(2) {
+    position: relative; 
+    text-align: center; 
+    opacity: 0.75; 
+
+
+
+
+.title { 
+  position: absolute; 
+  top: 8px; 
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor;  
+  
+}
+
+.date {
+  position: absolute; 
+  bottom: 8px; 
+  text-align: center; 
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor; 
+}
+
+  }
+
+
+  
+  div:nth-child(3) {
+    position: relative; 
+    text-align: center; 
+    opacity: 0.75; 
+ 
+
+
+
+.title { 
+  position: absolute; 
+  top: 8px; 
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor;  
+  
+}
+
+.date {
+  position: absolute; 
+  bottom: 8px; 
+  text-align: center; 
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor; 
+}
+
+  }
+
+
+
+  div:nth-child(4) {
+    position: relative; 
+    text-align: center; 
+    opacity: 0.75; 
+
+
+
+
+.title { 
+  position: absolute; 
+  top: 8px; 
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor;  
+  
+}
+
+.date {
+  position: absolute; 
+  bottom: 8px; 
+  text-align: center; 
+  width: 100%; 
+  padding: 15px;
+  background-color: $primaryColor; 
+  background: rgba($primaryColor, 0.2); 
+  color: $fontColor; 
+}
+
+  }
+
+
+
+
+  
 
 
 }
