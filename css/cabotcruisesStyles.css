@@ -308,7 +308,13 @@ body {
           background-color: #d4af37;
           background: rgba(212, 175, 55, 0.2);
           color: #ffffff; }
-    body main .card:hover {
+    body main .card-1:hover {
+      opacity: 1; }
+    body main .card-2:hover {
+      opacity: 1; }
+    body main .card-3:hover {
+      opacity: 1; }
+    body main .card-4:hover {
       opacity: 1; }
     body main figure.heroimage {
       width: 100%; }
