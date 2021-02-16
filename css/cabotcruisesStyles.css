@@ -457,12 +457,8 @@ body {
   /*-------------------- MAIN ------------------------------ */
   main {
     /* ------------------------Column----------------------------- */ }
-    main .container-cards {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 5px; }
-      main .container-cards .card-1 {
-        flex-basis: 31%; }
+    main .card {
+      flex-basis: 31%; }
     main .row {
       max-width: 1024px;
       min-width: 650px; }
@@ -527,12 +523,8 @@ body {
   /*-------------------- MAIN ------------------------------ */
   main {
     /* ------------------------Column-----------------------------*/ }
-    main .container-cards {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 5px; }
-      main .container-cards .card-1 {
-        flex-basis: 22%; }
+    main .card {
+      flex-basis: 20%; }
     main .row {
       max-width: 1200px;
       min-width: 1024px; }
