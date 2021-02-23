@@ -36,34 +36,15 @@ div#wrapperHead {
 
 
 header {
-  margin: 0 auto; 
-  margin-left: 10px; 
-  display: grid;
-  grid-template-columns: 1fr;
+ display: grid; 
+ grid-template-columns: 110px auto; 
   
+  
+.figure {
+  clear: both; 
+  margin-top: 100px; 
+}
 
-
-  div:nth-child(1) {
-    clear: both; 
-    float: left; 
-    margin-top: 50px; 
-  
-  }
-  
-  div:nth-child(2) { 
-    clear: both; 
-    font-size: 30px; 
-    color: $secondaryColor; 
-   
-  
-  }
-  
-  div:nth-child(3) {
-    display: none; 
-    
-  }
-  
-  
 
 
 }
@@ -264,26 +245,25 @@ li.slick-active button {
 
  
 .container-cards {
-display: flex; 
+  display: flex; 
 flex-wrap: wrap; 
-margin: 5px; 
+flex-basis: 48%; 
+
 
 
 
 
   .card {
-    flex-basis: 45%; 
     position: relative; 
     text-align: center; 
     opacity: 0.75; 
-    margin: 5px; 
-    
+    margin: 1rem 1%; 
    
 
 
 .title { 
   position: absolute; 
-  top: 8px; 
+  top: 0px; 
   width: 100%; 
   padding: 15px;
   background-color: $primaryColor; 
@@ -294,7 +274,7 @@ margin: 5px;
 
 .date {
   position: absolute; 
-  bottom: 8px; 
+  bottom: 0px; 
   text-align: center; 
   width: 100%; 
   padding: 15px;
@@ -303,20 +283,24 @@ margin: 5px;
   color: $fontColor; 
 }
 
+
+img {
+  display: block; 
+}
+
   }
 
 
 
+  .card:hover {
+    opacity: 1;
+    
+  }
   
 
 
 }
 
-
-.card:hover {
-  opacity: 1;
-  
-}
 
 
 

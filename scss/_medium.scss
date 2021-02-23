@@ -8,31 +8,7 @@
 
 
 header {
-display: grid; 
-grid-template-columns: 1fr 2fr;
 
-
-div:nth-child(1) {
-  margin-top: 0px; 
-}
-
-
-div:nth-child(2) { 
-    font-size: 30px; 
-    color: $secondaryColor; 
-   
-   
-  
-  }
-
-
-
-
-  div:nth-child(1) {
-  display: grid; 
-}
-
- 
 
 
 
@@ -155,7 +131,7 @@ main {
     
 
 
- .card {
+ .container-cards {
   flex-basis: 31%; 
  }
 

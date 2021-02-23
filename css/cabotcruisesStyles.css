@@ -106,20 +106,11 @@ body {
   body div#wrapperHead {
     background-color: #ffffff; }
   body header {
-    margin: 0 auto;
-    margin-left: 10px;
     display: grid;
-    grid-template-columns: 1fr; }
-    body header div:nth-child(1) {
+    grid-template-columns: 110px auto; }
+    body header .figure {
       clear: both;
-      float: left;
-      margin-top: 50px; }
-    body header div:nth-child(2) {
-      clear: both;
-      font-size: 30px;
-      color: #48d1cc; }
-    body header div:nth-child(3) {
-      display: none; }
+      margin-top: 100px; }
   body div#wrapperNav {
     background-color: #48d1cc; }
   body #hamburgerBtn {
@@ -219,16 +210,15 @@ body {
     body main .container-cards {
       display: flex;
       flex-wrap: wrap;
-      margin: 5px; }
+      flex-basis: 48%; }
       body main .container-cards .card {
-        flex-basis: 45%;
         position: relative;
         text-align: center;
         opacity: 0.75;
-        margin: 5px; }
+        margin: 1rem 1%; }
         body main .container-cards .card .title {
           position: absolute;
-          top: 8px;
+          top: 0px;
           width: 100%;
           padding: 15px;
           background-color: #d4af37;
@@ -236,15 +226,17 @@ body {
           color: #ffffff; }
         body main .container-cards .card .date {
           position: absolute;
-          bottom: 8px;
+          bottom: 0px;
           text-align: center;
           width: 100%;
           padding: 15px;
           background-color: #d4af37;
           background: rgba(212, 175, 55, 0.2);
           color: #ffffff; }
-    body main .card:hover {
-      opacity: 1; }
+        body main .container-cards .card img {
+          display: block; }
+      body main .container-cards .card:hover {
+        opacity: 1; }
     body main figure.heroimage {
       width: 100%; }
     body main figure.heroimage img {
@@ -390,17 +382,6 @@ body {
     max-width: 1024px; }
 
   /* ------------------------HEADER----------------------------- */
-  header {
-    display: grid;
-    grid-template-columns: 1fr 2fr; }
-    header div:nth-child(1) {
-      margin-top: 0px; }
-    header div:nth-child(2) {
-      font-size: 30px;
-      color: #48d1cc; }
-    header div:nth-child(1) {
-      display: grid; }
-
   /* ------------------------NAV----------------------------- */ }
 @media only screen and (min-width: 560px) and (min-width: 1200px) {
   nav button.primaryBtn {
@@ -457,7 +438,7 @@ body {
   /*-------------------- MAIN ------------------------------ */
   main {
     /* ------------------------Column----------------------------- */ }
-    main .card {
+    main .container-cards {
       flex-basis: 31%; }
     main .row {
       max-width: 1024px;
@@ -523,7 +504,7 @@ body {
   /*-------------------- MAIN ------------------------------ */
   main {
     /* ------------------------Column-----------------------------*/ }
-    main .card {
+    main .container-cards {
       flex-basis: 20%; }
     main .row {
       max-width: 1200px;
