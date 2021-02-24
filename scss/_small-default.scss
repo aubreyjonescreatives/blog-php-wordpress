@@ -61,7 +61,7 @@ header {
 
 
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 650px) {
 
 
 div.phone span {
@@ -248,7 +248,7 @@ justify-content: center;
 li {
   list-style-type: none;
   padding: 10px;   
-  font-size: 10px; 
+  font-size: 2px; 
   
 
   
@@ -286,7 +286,7 @@ flex-basis: 42%;
     text-align: center; 
     opacity: 0.75; 
     margin: 1rem 1%; 
-   
+    align-items: stretch; 
 
 
 .title { 
@@ -412,14 +412,6 @@ div#footerWrapper {
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: auto; 
-  }
-
-
-}
-
-
-
-footer {
   color: $fontColor;  
   padding: 20px; 
   text-align: center; 
@@ -440,6 +432,7 @@ footer {
  
  .footerInfo-1 {
    grid-column: 1;
+   grid-row: 1; 
    padding: 10px 0px;  
 
  
@@ -454,17 +447,19 @@ h2 a:link, a:visited {
  
  .footerInfo-2 {
   grid-column: 1; 
+  grid-row: 2; 
   padding: 10px 0px;  
 }
 
 
 .footerInfo-3 {
   grid-column: 1; 
+  grid-row: 3; 
   padding: 10px 0px;   
 }
 
 
-
+}
 
   input {
     border-radius: 10px 0px 0px 10px; 
@@ -491,11 +486,7 @@ h2 a:link, a:visited {
 
 
 
-
-
 }
-
-
 
 
 

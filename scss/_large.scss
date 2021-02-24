@@ -1,7 +1,7 @@
 
  /* -----------------------BODY ------------------------------- */ 
 
- header, nav, main, .container-cards, footer, .copyright, .footerSocialIcons { margin: 0 auto; min-width: 1024px; max-width: 1200px;}
+ header, nav, main, .container-cards, .copyright, .footerSocialIcons { margin: 0 auto; min-width: 1024px; max-width: 1200px;}
 
 
 
@@ -26,7 +26,7 @@ main {
  
 
 .container-cards {
-
+margin: 0 auto; 
 
  .cards {
 
@@ -73,9 +73,7 @@ main {
 
 
 
-
-@media only screen and (max-width: 1200px) {
-
+@media only screen and (min-width: 1201px) {
 
 
 
@@ -83,36 +81,80 @@ main {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: auto; 
+  color: $fontColor;  
+  padding: 20px; 
+ 
+  
+  h1 {
+    font-size: 24px; 
+    line-height: 30px; 
   }
+
+  h2 {
+    padding: 10px 0px; 
+  }
+
+  p {
+    padding: 10px 0px; 
+  }
+
+ 
+ .footerInfo-1 {
+   grid-column: 1;
+   grid-row: 1; 
+   padding: 10px 0px;  
+   text-align: center; 
+ 
+
+
+h2 a:link, a:visited {
+  color: $fontColor; 
+  text-decoration: none; 
+}
+ }
+
+ 
+ .footerInfo-2 {
+  grid-column: 2; 
+  grid-row: 1; 
+  padding: 10px 50px;  
+  text-align: center;
+  margin-left: -80px;  
+}
+
+
+.footerInfo-3 {
+  grid-column: 3; 
+  grid-row: 1; 
+  padding: 10px 0px;  
+  text-align: center;  
+}
 
 
 }
 
-
-
-
-  footer {
-
-
-  .footerInfo-1 {
-    grid-column: 1 / span 1; 
-  }
- 
-  
-  .footerInfo-2 {
-   grid-column: 2 / span 1; 
- }
- 
- 
- .footerInfo-3 {
-   grid-column: 3 / span 1;  
- }
- 
-
-
-
-  
+  input {
+    border-radius: 10px 0px 0px 10px; 
+    border: none; 
+    margin-right: 0px; 
+    padding: 12px 9px 10px 10px; 
   }
   
+  button {
+    border-radius: 0px 10px 10px 0px;
+    border: none;   
+    margin-left: -10px;
+    font-size: 1rem; 
+    padding: 10px;  
+    color: $primaryColor; 
+    border-color: white; 
+    
+  }
 
+  button a:link, a:visited {
+    color: $primaryColor; 
+  }
+
+
+}
 
