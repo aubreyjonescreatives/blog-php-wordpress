@@ -1,11 +1,10 @@
 
  /* -----------------------BODY ------------------------------- */ 
 
- header, nav, main, footer, .copyright, .footerSocialIcons { margin: 0 auto; max-width: 1200px;}
+ header, nav, main, .container-cards, footer, .copyright, .footerSocialIcons { margin: 0 auto; min-width: 1024px; max-width: 1200px;}
 
 
 
-//body{}
 
 
 /*-------------------- HEADER ------------------------------ */
@@ -26,19 +25,21 @@
 main {
  
 
+.container-cards {
 
 
- .container-cards {
+ .cards {
+
   flex-basis: 20%; 
  }
 
- 
+}
 
 /* ------------------------Column-----------------------------*/ 
 
 .row { 
     max-width: 1200px; 
-    min-width: 1024px;  
+    
   
   }
   
@@ -70,12 +71,48 @@ main {
 
 /*-------------------- FOOTER ------------------------------ */
 
-    
-footer {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: auto;
- 
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+
+
+  footer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+  }
 
 
 }
+
+
+
+
+  footer {
+
+
+  .footerInfo-1 {
+    grid-column: 1 / span 1; 
+  }
+ 
+  
+  .footerInfo-2 {
+   grid-column: 2 / span 1; 
+ }
+ 
+ 
+ .footerInfo-3 {
+   grid-column: 3 / span 1;  
+ }
+ 
+
+
+
+  
+  }
+  
+
+

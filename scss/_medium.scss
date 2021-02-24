@@ -1,5 +1,5 @@
 
- header, nav, main, footer, .copyright, .footerSocialIcons {margin: 0 auto; max-width: 1024px; }
+ header, nav, main, footer, .copyright, .footerSocialIcons {margin: 0 auto; min-width: 651px; max-width: 1024px; }
 
 
 
@@ -8,11 +8,21 @@
 
 
 header {
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr; 
+
+div.phone { 
+font-size: 16px; 
+color: $secondaryColor; 
+align-self: end;  
 
 
+a:link, a:visited {
+  color: $secondaryColor; 
+  text-decoration: none; 
+}
 
-
-
+}
   
   }
 
@@ -128,22 +138,23 @@ main {
  
 
 
-    
+ .container-cards {   
+  display: grid; 
+  justify-self: center;
 
-
- .container-cards {
+ .cards {
   flex-basis: 31%; 
  }
 
  
-
+ }
 
 
 /* ------------------------Column----------------------------- */
 
 .row { 
     max-width: 1024px;
-    min-width: 650px;  
+    
   
   }
   
@@ -172,14 +183,48 @@ main {
 
 /*----------------FOOTER--------------------*/
 
-footer {
-  
-  display: grid; 
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
+
+@media only screen and (max-width: 1024px) {
+
+
+
+
+  footer {
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: auto; 
+  }
 
 
 }
+
+
+footer {
+ 
+
+  .footerInfo-1 {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+  }
+ 
+  
+  .footerInfo-2 {
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+ }
+ 
+ 
+ .footerInfo-3 {
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+     
+ }
+ 
+ 
+
+
+}
+
 
 
 
